@@ -3,7 +3,7 @@ This study derives how the gain fluctuates in the SiPM used for reading the elec
 for this gain is then simulated and finally compared with 
 
 
-## Simulation of gain function of the SiPM
+## Simulation of gain function
 Silicon Photo-Multipliers (SiPMs) were used to read data from the calorimeters and the gain fluctuation (or function) was modelled based on 
 bias-voltage sagging (due to decay of current in capacitors and other circuit elements) - this matched well with small desktop experimental 
 results as shown:</br> 
@@ -11,8 +11,7 @@ results as shown:</br>
 <img width="437" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
 
 **The laser_gainSimulation.C code:**
-The default gainsimulationTest function takes 2000 cycles, 16 fills and 2 laser shots in each cycle.</br> 
-This gives reasonble results. You can run reduce the 
-number of cyles for a reasonable result. 
+The default gainsimulationTest() function takes 2000 cycles, 16 fills and 2 laser shots in each cycle.</br> 
+This gives reasonble results. You can run reduce the number of cyles for a reasonable result. </br>
 $ root -l laser_gainSimulation.C</br>
 $ root [1] gainSimulationTest()</br>
