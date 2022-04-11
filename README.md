@@ -15,6 +15,7 @@ We obtain the average gain function by averaging over all times t<sub>i</sub> (w
 <img width="446" alt="Screen Shot 2022-04-11 at 1 54 55 PM" src="https://user-images.githubusercontent.com/27436642/162800199-af362a3b-5794-42d7-bf4a-0e6cc1cfcf80.png"></br>
  Fig. 1
 </p>
+
 ### Simulation of gain function
 We now produce a fast simulation to study the bias voltage (BV) sagging. It is the convolution of a single energy drop with the time distribution of the positrons. The cumulative gain (for n<sub>o</sub> pulses) is,</br>
 <img width="341" alt="Screen Shot 2022-04-11 at 7 51 16 PM" src="https://user-images.githubusercontent.com/27436642/162851283-85d8c498-a536-4e42-8d15-9e4bef4554dc.png"></br>
@@ -27,6 +28,7 @@ The final results matched well with small desktop experimental results as shown:
 <img width="437" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
 Fig. 3
 </p>
+
 **The gainSimulation.C code:**
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
