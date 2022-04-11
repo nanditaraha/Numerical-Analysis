@@ -24,7 +24,7 @@ $ root [1] gainSimulationTest()</br>
 **The gainSimulation.C code:**
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
-Fig 1 and 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br>
+Plots of fig 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br>
 
 **The fit_simp_wiggle.C code:**
 varyDrop10_m100_c500_f16_80_5.root
