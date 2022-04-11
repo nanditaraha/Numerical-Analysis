@@ -16,15 +16,15 @@ results as shown:</br>
 <img width="437" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
 
 **The laser_gainSimulation.C code:**
-The default gainsimulationTest() function takes 2000 cycles, 16 fills and 2 laser shots in each cycle.</br> 
+The default gainsimulationTest() function takes 500 cycles, 16 fills and 2 laser shots in each cycle.</br> 
 This gives reasonble results. You can run reduce the number of cyles for a quick check. </br>
 $ root -l laser_gainSimulation.C</br>
 $ root [1] gainSimulationTest()</br>
-
+Creates a root file with a drop-factor of 10, gap = 320 us, and 100 muons in a fill.
 **The gainSimulation.C code:**
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
 Plots of fig 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br>
 
-**The fit_simp_wiggle.C code:**
+**The fit_sipm_wiggle.C code:**
 varyDrop10_m100_c500_f16_80_5.root
