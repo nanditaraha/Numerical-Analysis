@@ -15,3 +15,8 @@ The default gainsimulationTest() function takes 2000 cycles, 16 fills and 2 lase
 This gives reasonble results. You can run reduce the number of cyles for a reasonable result. </br>
 $ root -l laser_gainSimulation.C</br>
 $ root [1] gainSimulationTest()</br>
+
+**The gainSimulation.C code:**
+This produces pdfs with the following number of muons in a fill:</br>
+1, 20, 50, 100, 300, 1000. </br>
+Fig 1 and 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br>
