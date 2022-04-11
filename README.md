@@ -12,7 +12,7 @@ results as shown:</br>
 
 **The laser_gainSimulation.C code:**
 The default gainsimulationTest() function takes 2000 cycles, 16 fills and 2 laser shots in each cycle.</br> 
-This gives reasonble results. You can run reduce the number of cyles for a reasonable result. </br>
+This gives reasonble results. You can run reduce the number of cyles for a quick check. </br>
 $ root -l laser_gainSimulation.C</br>
 $ root [1] gainSimulationTest()</br>
 
