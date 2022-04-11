@@ -19,9 +19,11 @@ We obtain the average gain function by averaging over all times ti (which are as
 Silicon Photo-Multipliers (SiPMs) were used to read data from the calorimeters and the gain fluctuation (or function) was modelled based on 
 bias-voltage sagging (due to decay of current in capacitors and other circuit elements) - this matched well with small desktop experimental 
 results as shown:</br> 
+<p align = "center">
 <img width="348" alt="Screen Shot 2022-04-10 at 6 41 23 AM" src="https://user-images.githubusercontent.com/27436642/162614319-5cb05518-582e-4437-9447-fe8fc9adaefb.png">
 <img width="437" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
-
+Fig. 2
+</p>
 **The gainSimulation.C code:**
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
