@@ -2,7 +2,12 @@
 This study derives how the gain fluctuates in the SiPM used for reading the electron calorimeters in the Muon g-2 experiment. The numerical solutions 
 for this gain is then simulated and finally compared with 
 
-
+## Gain variation in a fill: semi-analytical approach
+The distribution of the electron/positron as a function of electron energy E (i.e. the wiggle plot), decay asymmetry A and a constant phase term φ that depends on the drift time of the electrons is given by,
+<p style="align: center;">
+<img width="546" alt="Screen Shot 2022-04-11 at 1 54 55 PM" src="https://user-images.githubusercontent.com/27436642/162800199-af362a3b-5794-42d7-bf4a-0e6cc1cfcf80.png"></br>
+<center> Fig. 1</center></br>
+</p>
 ## Simulation of gain function
 Silicon Photo-Multipliers (SiPMs) were used to read data from the calorimeters and the gain fluctuation (or function) was modelled based on 
 bias-voltage sagging (due to decay of current in capacitors and other circuit elements) - this matched well with small desktop experimental 
@@ -20,3 +25,6 @@ $ root [1] gainSimulationTest()</br>
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
 Fig 1 and 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br>
+
+**The fit_simp_wiggle.C code:**
+varyDrop10_m100_c500_f16_80_5.root
