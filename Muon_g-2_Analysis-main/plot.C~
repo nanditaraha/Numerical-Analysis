@@ -1,0 +1,46 @@
+long double th,s;
+
+long double dsigmadth(double *thetae, double *par){
+    long double me = 0.000511;
+    long double me2 = me*me;
+    long double mmu = 0.10566;
+    long double mu2=mmu*mmu;
+    //   long double Emu=150.;
+    long double Emu=par[0];
+    th=*thetae;
+    long double ce=cos(th);
+    long double se=sin(th);
+    long double r=sqrt(Emu*Emu-mu2)/(Emu+me);
+    long double Ee=me*(1+(r*ce)*(r*ce))/(1-(r*ce)*(r*ce));
+    //    if(Ee>1.0){
+    s=me2+mu2+2*me*Emu;
+    long double t=2*me2-2*me*Ee;
+    //    cout<<r<<" "<<Ee<<" "<<s<<" "<<t<<" \n";
+    long double factor=4*me2*r*r*TMath::Abs(ce*se)/(1.-r*r*ce*ce)/(1.-r*r*ce*ce);
+    double dsdthe= dsigmadth(s,t)*factor;
+    //    long dsdthe= lambda(s,me2,mu2)*factor;
+    //    cout<<me2<<" "<<r<<" "<<ce<<" "<<se<<" "<<TMath::Abs(ce*se)<<" "<<factor<<" \n";
+    //    cout<<dsdthe<<" \n";
+
+
+  return dsdthe;
+    //    }
+}
+
+
+void plot(){
+  TF1 *fun4 = new TF1("dsdth",dsigmadth,0.,60.e-3,1);
+  //  TF1 *fun4 = new TF1("dsdth",pippo,0.,60.e-3,1);
+  fun4-> SetParameter(0,150.);
+  fun4->Draw();
+  //  cout<<fun4->Integral(0., 0.032)<<" \n";
+double delta=1e-6;
+ double thmin=0.;
+ double thmax=0.032;
+ double P=fun4->Integral(thmin,th-delta)+fun4->Integral(s+delta,thmax);
+ P+=(fun4->Eval(s-delta)+fun4->Eval(s+delta))*delta;
+
+ cout<<P<<"\n";
+}
+
+
