@@ -12,7 +12,7 @@ We obtain the average gain function by averaging over all times t<sub>i</sub> (w
 <img width="468" alt="Screen Shot 2022-04-11 at 2 39 15 PM" src="https://user-images.githubusercontent.com/27436642/162807192-d163e4aa-7baf-4cec-adba-5341cc359095.png"></br>
 Gain functions for τ<sub>k</sub> = 1 μs, τ<sub>k</sub> = 3 μs, τ<sub>k</sub> = 10 μs and τ<sub>k</sub> = 20 μs corresponding to the green, blue, red and black colors respectively. </br>
 <p align = "center">
-<img width="446" alt="Screen Shot 2022-04-11 at 1 54 55 PM" src="https://user-images.githubusercontent.com/27436642/162800199-af362a3b-5794-42d7-bf4a-0e6cc1cfcf80.png"></br>
+<img width="406" alt="Screen Shot 2022-04-11 at 1 54 55 PM" src="https://user-images.githubusercontent.com/27436642/162800199-af362a3b-5794-42d7-bf4a-0e6cc1cfcf80.png"></br>
  Fig. 1
 </p>
 
@@ -24,8 +24,8 @@ An eaxmple of a single muon pulse (left) and 100 pulses (right) in a fill is sho
 <p align = center> Fig.2</p>
 The final results matched well with small desktop experimental results as shown:</br> 
 <p align = "center">
-<img width="396" alt="Screen Shot 2022-04-11 at 7 42 42 PM" src="https://user-images.githubusercontent.com/27436642/162850620-556680a7-bd75-43c9-adf4-2eb090b10b27.png">
-<img width="437" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
+<img width="376" alt="Screen Shot 2022-04-11 at 7 42 42 PM" src="https://user-images.githubusercontent.com/27436642/162850620-556680a7-bd75-43c9-adf4-2eb090b10b27.png">
+<img width="417" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
 Fig. 3
 </p>
 
