@@ -18,7 +18,7 @@ Gain functions for τ<sub>k</sub> = 1 μs, τ<sub>k</sub> = 3 μs, τ<sub>k</sub
 
 ### Simulation of gain function
 We now produce a fast simulation to study the bias voltage (BV) sagging. It is the convolution of a single energy drop with the time distribution of the positrons. The cumulative gain (for n<sub>o</sub> pulses) is,</br>
-<img width="341" alt="Screen Shot 2022-04-11 at 7 51 16 PM" src="https://user-images.githubusercontent.com/27436642/162851283-85d8c498-a536-4e42-8d15-9e4bef4554dc.png"></br>
+<img width="341" alt="Screen Shot 2022-04-11 at 7 51 16 PM" src="https://user-images.githubusercontent.com/27436642/162851283-85d8c498-a536-4e42-8d15-9e4bef4554dc.png">     </br>
 An eaxmple of a single muon pulse (left) and 100 pulses (right) in a fill is shown below:</br>
 <img width="892" alt="Screen Shot 2022-04-11 at 7 56 15 PM" src="https://user-images.githubusercontent.com/27436642/162851751-b079ffeb-2392-4a07-abe8-20deb881530f.png">
 <p align = center> Fig.2</p>
@@ -28,18 +28,27 @@ The final results matched well with small desktop experimental results as shown:
 <img width="437" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
 Fig. 3
 </p>
-
+------------------------------------------------------------------------------------------------------------------------
 ### Instructions for the code:
 This just uses C++ and ROOT. Make sure to install these. I have briefly described the three important modules that produce the above plots.
+
 ***The gainSimulation.C code:***</br>
+This a simple C file using root as:</br>
+$ root -l gainSimulation.C</br>
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
 Plots of fig 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br
+
  ***The laser_gainSimulation.C code:***</br> 
 The default gainsimulationTest() function takes 50 cycles, 16 fills and 5 laser shots in each cycle.</br> 
 This gives reasonble results. You can run reduce the number of cyles for a quick check or increase it to reproduce fig. above.</br>
 $ root -l laser_gainSimulation.C</br>
 $ root [1] gainSimulationTest()</br>
-Creates a root file *noWiggle_fac10_g320_m100.root* with a drop-factor (p<sub>o</sub>) of 10, gap $tau;<sub>r</sub>= 320 us, and n<sub>o</sub>100 muons in a fill.</br>
+Creates a root file *noWiggle_fac10_g320_m100.root* with a drop-factor (p<sub>o</sub>) of 10, gap $tau;<sub>r</sub>= 320 us, and n<sub>o</sub>=100 muons in a fill.</br>
+Left panel of fig.3 is the same for 2000 cycles.
 
 ***The fit_sipm_wiggle.C code:***
+This takes the root file *noWiggle_fac10_g320_m100.root* as fits it using the final formula for simulation gain G(t)/G<sub>o</sub>. </br>
+$ root -l fit_sipm_wiggle.C
+
+------------------------------------------------------------------------------------------------------------------------
