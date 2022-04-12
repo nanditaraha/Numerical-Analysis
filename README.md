@@ -50,7 +50,7 @@ Creates a root file *noWiggle_fac10_g320_m100.root* with a drop-factor (p<sub>o<
 Left panel of fig.3 is the same for 2000 cycles.
 
 ***The fit_sipm_wiggle.C code:***
-This takes the root file *noWiggle_fac10_g320_m100.root* as fits it using the final formula for simulation gain G(t)/G<sub>o</sub>. </br>
+This takes the root file *noWiggle_fac10_g320_m100.root* as fits it using the final formula for simulation gain G(t)/G<sub>o</sub>. Left panel of fig.3 shows this fit.</br>
 $ root -l fit_sipm_wiggle.C
 
 ------------------------------------------------------------------------------------------------------------------------
