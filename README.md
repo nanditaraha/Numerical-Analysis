@@ -9,9 +9,9 @@ where N, A and φ depend on the energy. Expanding this</br>
 <img width="327" alt="Screen Shot 2022-04-11 at 2 37 31 PM" src="https://user-images.githubusercontent.com/27436642/162806914-067718df-82a5-4147-a2aa-a787a313af15.png"></br>
 where n0 is the number of pluses in a fill and θ(t − t<sub>i</sub>) is the Heaviside step function to include pulses sorted in increasing order of time.
 We obtain the average gain function by averaging over all times t<sub>i</sub> (which are assumed to be the same) and the entire energy range. This is given by,</br>
-<img width="468" alt="Screen Shot 2022-04-11 at 2 39 15 PM" src="https://user-images.githubusercontent.com/27436642/162807192-d163e4aa-7baf-4cec-adba-5341cc359095.png">
+<img width="468" alt="Screen Shot 2022-04-11 at 2 39 15 PM" src="https://user-images.githubusercontent.com/27436642/162807192-d163e4aa-7baf-4cec-adba-5341cc359095.png"></br>
+Gain functions for τ<sub>k</sub> = 1 μs, τ<sub>k</sub> = 3 μs, τ<sub>k</sub> = 10 μs and τ<sub>k</sub> = 20 μs corresponding to the green, blue, red and black colors respectively. </br>
 <p align = "center">
- Gain functions for τ<sub>k</sub> = 1 μs, τ<sub>k</sub> = 3 μs, τ<sub>k</sub> = 10 μs and τ<sub>k</sub> = 20 μs corresponding to the green, blue, red and black colors respectively.
 <img width="446" alt="Screen Shot 2022-04-11 at 1 54 55 PM" src="https://user-images.githubusercontent.com/27436642/162800199-af362a3b-5794-42d7-bf4a-0e6cc1cfcf80.png"></br>
  Fig. 1
 </p>
@@ -30,21 +30,16 @@ Fig. 3
 </p>
 
 ### Instructions for the code:
-<ol>
 This just uses C++ and ROOT. Make sure to install these. I have briefly described the three important modules that produce the above plots.
-
-<li> The gainSimulation.C code: </br>
+***The gainSimulation.C code:***</br>
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
 Plots of fig 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br
-</li>
-<li> **The laser_gainSimulation.C code:**</br> 
+ ***The laser_gainSimulation.C code:***</br> 
 The default gainsimulationTest() function takes 50 cycles, 16 fills and 5 laser shots in each cycle.</br> 
 This gives reasonble results. You can run reduce the number of cyles for a quick check or increase it to reproduce fig. above.</br>
 $ root -l laser_gainSimulation.C</br>
-
 $ root [1] gainSimulationTest()</br>
-Creates a root file with a drop-factor of 10, gap = 320 us, and 100 muons in a fill.</li>
+Creates a root file *noWiggle_fac10_g320_m100.root* with a drop-factor (p<sub>o</sub>) of 10, gap $tau;<sub>r</sub>= 320 us, and n<sub>o</sub>100 muons in a fill.</br>
 
-**The fit_sipm_wiggle.C code:**
-noWiggle_fac10_g320_m100.root 
+***The fit_sipm_wiggle.C code:***
