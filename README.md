@@ -29,18 +29,22 @@ The final results matched well with small desktop experimental results as shown:
 Fig. 3
 </p>
 
-**The gainSimulation.C code:**
+### Instructions for the code:
+<ol>
+This just uses C++ and ROOT. Make sure to install these. I have briefly described the three important moduled that produce the above plots.
+
+<li> **The gainSimulation.C code:** </br>
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
 Plots of fig 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br
-
-**The laser_gainSimulation.C code:**
+</li>
+<li> **The laser_gainSimulation.C code:**</br> 
 The default gainsimulationTest() function takes 50 cycles, 16 fills and 5 laser shots in each cycle.</br> 
 This gives reasonble results. You can run reduce the number of cyles for a quick check or increase it to reproduce fig. above.</br>
 $ root -l laser_gainSimulation.C</br>
 
 $ root [1] gainSimulationTest()</br>
-Creates a root file with a drop-factor of 10, gap = 320 us, and 100 muons in a fill.
+Creates a root file with a drop-factor of 10, gap = 320 us, and 100 muons in a fill.</li>
 
 **The fit_sipm_wiggle.C code:**
 noWiggle_fac10_g320_m100.root 
