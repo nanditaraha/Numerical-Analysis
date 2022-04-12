@@ -31,9 +31,9 @@ Fig. 3
 
 ### Instructions for the code:
 <ol>
-This just uses C++ and ROOT. Make sure to install these. I have briefly described the three important moduled that produce the above plots.
+This just uses C++ and ROOT. Make sure to install these. I have briefly described the three important modules that produce the above plots.
 
-<li> **The gainSimulation.C code:** </br>
+<li> The gainSimulation.C code: </br>
 This produces pdfs with the following number of muons in a fill:</br>
 1, 20, 50, 100, 300, 1000. </br>
 Plots of fig 2 are produced running this code with 1 and 100 muons (saved in the pdfs). </br
