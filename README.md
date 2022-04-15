@@ -17,7 +17,7 @@ Gain functions for τ<sub>k</sub> = 1 μs, τ<sub>k</sub> = 3 μs, τ<sub>k</sub
 </p>
 
 ### Simulation of gain function
-We now produce a fast simulation to study the bias voltage (BV) sagging. It is the convolution of a single energy drop with the time distribution of the positrons. The cumulative gain (for n<sub>o</sub> pulses) is,</br>
+We produced a ***Monte Carlo simulation*** to study the bias voltage (BV) sagging of the SiPMs (Silicon Photo Multipliers) . It is the convolution of a single energy drop with the time distribution of the positrons. The cumulative gain (for n<sub>o</sub> pulses) is,</br>
 <img width="341" alt="Screen Shot 2022-04-11 at 7 51 16 PM" src="https://user-images.githubusercontent.com/27436642/162851283-85d8c498-a536-4e42-8d15-9e4bef4554dc.png">     </br>
 An eaxmple of a single muon pulse (left) and 100 pulses (right) in a fill is shown below:</br>
 <img width="892" alt="Screen Shot 2022-04-11 at 7 56 15 PM" src="https://user-images.githubusercontent.com/27436642/162851751-b079ffeb-2392-4a07-abe8-20deb881530f.png">
