@@ -1,4 +1,4 @@
-## Numerical analysis and Monte Carlo simulations of the energy gain fluctuation in SiPMs
+## Numerical analysis and Monte Carlo simulations of the energy gain fluctuation formula in SiPMs
 This study derives how the gain fluctuates in the SiPM used for reading the electron calorimeters in the Muon g-2 experiment. The numerical solutions 
 for this gain is then simulated and finally compared with the experimental data.
 
