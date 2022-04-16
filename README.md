@@ -24,8 +24,8 @@ An eaxmple of a single muon pulse (left) and 100 pulses (right) in a fill is sho
 <p align = center> Fig.2</p>
 The final results matched well with small desktop experimental results as shown:</br> 
 <p align = "center">
-<img width="376" alt="Screen Shot 2022-04-11 at 7 42 42 PM" src="https://user-images.githubusercontent.com/27436642/162850620-556680a7-bd75-43c9-adf4-2eb090b10b27.png">
-<img width="417" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
+<img width="336" alt="Screen Shot 2022-04-11 at 7 42 42 PM" src="https://user-images.githubusercontent.com/27436642/162850620-556680a7-bd75-43c9-adf4-2eb090b10b27.png">
+<img width="397" alt="Screen Shot 2022-04-10 at 6 45 55 AM" src="https://user-images.githubusercontent.com/27436642/162614447-6c587309-45aa-411b-b2c1-192a5fa95a6e.png"></br>
 Fig. 3
 </p>
 
